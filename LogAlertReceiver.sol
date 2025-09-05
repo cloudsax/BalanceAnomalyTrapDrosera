@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-/// @title Простой контракт-реципиент для логирования тревоги
 contract LogAlertReceiver {
-    event Alert(string message);
+    event Alert(string message, uint256 timestamp);
+
     function logAnomaly(string calldata message) external {
-        emit Alert(message);
+        emit Alert(message, block.timestamp);
     }
 }
