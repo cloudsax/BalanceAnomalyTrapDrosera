@@ -1,0 +1,6 @@
+# Конфигурация Drosera Trap
+[traps.balance_anomaly]
+path = "out/BalanceAnomalyTrap.sol/BalanceAnomalyTrap.json"
+# Укажите адрес контракта-реакции после деплоя:
+response_contract = "0x0000000000000000000000000000000000000000"
+response_function = "logAnomaly(string)"
